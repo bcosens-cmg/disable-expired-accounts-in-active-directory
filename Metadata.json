@@ -1,7 +1,7 @@
 {
     "Author": "Peter Selch Dahl - Azure MVP",
     "ContentSize": 3468,
-    "ContentUrl": "https://raw.githubusercontent.com/azureautomation/disable-expired-accounts-in-active-directory./master/Disable_Expired_AD_Accounts.ps1",
+    "ContentUrl": "https://raw.githubusercontent.com/azureautomation/disable-expired-accounts-in-active-directory/master/Disable_Expired_AD_Accounts.ps1",
     "DownloadCount": 3745,
     "Id": "Disable-expired-accounts-128f9f41",
     "IsFederated": false,
@@ -15,6 +15,6 @@
     "Summary": "This script is a simple solution for disabling accounts that are expired in the Active Directory. The script was developed to block sign in for accounts synchonized to Azure Active Directory (Microsoft Office 365) that use Password Hash Synchronization.  Microsoft currently allow",
     "Title": "Disable expired accounts in Active Directory.",
     "UpdatedDate": "2017-9-18T00:00:00",
-    "Url": "https://github.com/azureautomation/disable-expired-accounts-in-active-directory.",
+    "Url": "https://github.com/azureautomation/disable-expired-accounts-in-active-directory",
     "UserTags": "Security, Microsoft Azure, Active Directory User Accounts"
 }
