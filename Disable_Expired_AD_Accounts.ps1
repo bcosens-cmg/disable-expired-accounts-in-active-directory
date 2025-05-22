@@ -12,7 +12,7 @@
         Author: Peter Selch Dahl
         WWW: blog.peterdahl.net
         Last Updated: 9/18/2017
-        The script is provided ìAS ISî with no warranties or guarantees.
+        The script is provided ‚ÄúAS IS‚Äù with no warranties or guarantees.
 
         Azure Feeback: Sync "Account Expired" UserAccountControl to Azure AD (AccountEnabled)
         https://feedback.azure.com/forums/169401-azure-active-directory/suggestions/31459621-sync-account-expired-useraccountcontrol-to-azure
@@ -67,11 +67,11 @@ $users = Search-ADAccount @param |
 Get-ADuser -Properties Department,Title,AccountExpirationDate,SAMAccountName | where {$_.enabled -eq $true}
 
 #$users | Select Name,Department,Title,DistinguishedName,AccountExpirationDate,SAMAccountName 
-
+$i = 0
 ForEach($user in $users)  
   {
    $date = Get-Date
-   if($user.enabled -eq $true -and $user.AccountExpirationDate -lt $date.ToShortDateString())  
+   if($user.enabled -eq $true -and $user.AccountExpirationDate.ToString() -lt $date.ToString())  
     {  
       Write-Output "Disabling user: $($user.SAMAccountName)"
       Disable-ADAccount -Identity $user.SAMAccountName
